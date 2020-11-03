@@ -1,0 +1,8 @@
+# tape the ocommand : docker swarm join-token worker
+# follow instruction and copy the given command inside Aiur
+# docker-machine ssh Aiur 
+# paste the command here 
+# docker swarm join --token SWMTKN-1-2yiykccdvp3n6a66unul4cp1ny4tjkzs5yx99qnkc7vopjgpg9-8hirk29vgeeky13saf62e3vwv 192.168.99.100:2377
+
+# Or directly type the following command:
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377

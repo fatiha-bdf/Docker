@@ -1,0 +1,7 @@
+#don't forget lien symbolique: 
+# ➜  cd
+# ➜  mv .docker /goinfre/
+# ➜ ln -s /goinfre/.docker .
+# ➜  ls -la | grep docker
+
+docker-machine create --driver virtualbox Char
